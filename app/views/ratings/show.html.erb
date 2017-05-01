@@ -74,17 +74,11 @@
   <% end %>
 </p>
 
-<div class="function">
-  <button type="button" class="button">
-   <%= link_to "Back to Previous", visits_path %>
-  </button>
-</div>
-
 
 <h3>Anyother Opinions for this Journey?</h3>
 <p> <%= @rating.comment %> </p>
 
-<time> Posted <%= @rating.created_at %> </time>
+<time> Posted at <%= @rating.created_at %> </time>
 
 </article>
 
@@ -93,5 +87,12 @@
 <%= link_to "Edit this Rating", edit_visit_rating_path(@visit, @rating) %>
 </button>
 </p>
+
+
+<div class="function">
+  <button type="button" class="button">
+   <%= link_to "Back to Previous", visits_path %>
+  </button>
+</div>
 
 </div>
