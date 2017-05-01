@@ -1,0 +1,43 @@
+<div class="main_body" style="background: url(<%= @visit.photo %>) no-repeat center; background-size: cover">
+
+<h1>Welcome to
+  <br>
+  <span class="visit_name">
+  <%= @visit.name %> = <%= @visit.country %>
+  </span>
+</h1>
+<time> Updated at <%= @visit.updated_at %> </time>
+
+<p>
+  <button type="button">
+      <%= link_to "Edit Tourist Spot", edit_visit_path(@visit) %>
+  </button>
+</p>
+
+<article>
+<h2>Rating A Tourist Spot!</h2>
+<% @ratings.each do |rating| %>
+
+<div class="text_box">
+<p> View <%= link_to "Review Full Rating", visit_rating_path(@visit, rating) %> by
+  <%= rating.user.email %>
+<br>
+  <%= rating.comment %>
+</p>
+</div>
+<% end %>
+</article>
+
+<div class = "function">
+<button type="button" class="button">
+ <%= link_to "Back to Previous", visits_path %>
+</button>
+</div>
+
+<p>
+  <button type="button">
+    <%= link_to "Add Your Opinion", new_visit_rating_path(@visit) %>
+  </button>
+</p>
+
+</div>

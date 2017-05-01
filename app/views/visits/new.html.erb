@@ -1,0 +1,31 @@
+<div class="main_body">
+
+<h1> Share Your Journey </h1>
+
+<%= form_for @visit do |f| %>
+<article>
+
+<p><%= f.label :name, "Tourist Spot Name:" %></p>
+<p><%= f.text_field :name %></p>
+
+<p><%= f.label :country, "Country Name:" %></p>
+<p><%= f.text_field :country %></p>
+
+<p><%= f.label :photo, "Add Your Tourist Spot Photo:" %></p>
+<p><%= f.text_field :photo %></p>
+
+<p> <%= f.label :diary, "Your Experienced about your journey" %> </p>
+<p> <%= f.text_area :diary %>
+
+</article>
+<p><%= f.submit %></p>
+
+<% end %>
+
+<div class="function">
+  <button type="button" class="button">
+   <%= link_to "Back to Previous", visits_path %>
+  </button>
+</div>
+
+</div>
