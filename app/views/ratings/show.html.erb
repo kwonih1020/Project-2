@@ -1,0 +1,97 @@
+<div class="main_body">
+
+<h1>
+  <span class="visit_name">
+  <%= Visit.find(@rating.visit_id).name %>, <%= Visit.find(@rating.visit_id).country %>
+  </span>
+</h1>
+
+<article>
+
+<h3>Recommendation Rating for this journey: </h3>
+
+<div class="star">
+<img src="<%= image_url("rating_star.png") %>">
+<img src="<%= image_url("rating_star.png") %>">
+<img src="<%= image_url("rating_star.png") %>">
+<img src="<%= image_url("rating_star.png") %>">
+<img src="<%= image_url("rating_star.png") %>">
+    <div class="bar" style="width: <%= @rating.recommendations_rating.to_i.to_f / 5 * 100 %>%;">
+    </div>
+</div>
+
+<p>
+  <% if @rating.recommendations_rating == "5" %>
+    <p> <%= @rating.recommendations_rating %>: Great! </p>
+
+  <% elsif @rating.recommendations_rating == "4" %>
+    <p> <%= @rating.recommendations_rating %>: Satisfied. </p>
+
+  <% elsif @rating.recommendations_rating == "3" %>
+    <p> <%= @rating.recommendations_rating %>: Neutral. </p>
+
+  <% elsif @rating.recommendations_rating == "2" %>
+    <p> <%= @rating.recommendations_rating %>: Dissatisfied. </p>
+
+  <% elsif @rating.recommendations_rating == "1" %>
+    <p> <%= @rating.recommendations_rating %>: Please Don't go! </p>
+
+  <% else %>
+    <p class="rating"> Please Rate Your Experience for this Journey! </p>
+  <% end %>
+</p>
+
+<h3>Safety Rating for this journey: </h3>
+
+<div class="star">
+  <img src="<%= image_url("rating_star.png") %>">
+  <img src="<%= image_url("rating_star.png") %>">
+  <img src="<%= image_url("rating_star.png") %>">
+  <img src="<%= image_url("rating_star.png") %>">
+  <img src="<%= image_url("rating_star.png") %>">
+    <div class="bar" style="width: <%= @rating.safety_rating.to_i.to_f / 5 * 100 %>%;">
+    </div>
+</div>
+
+<p>
+  <% if @rating.safety_rating == "5" %>
+   <p> <%= @rating.safety_rating %>: Very Secure! </p>
+
+  <% elsif @rating.safety_rating == "4" %>
+   <p> <%= @rating.safety_rating %>: Safe. </p>
+
+  <% elsif @rating.safety_rating == "3" %>
+   <p> <%= @rating.safety_rating %>: Neutral. </p>
+
+  <% elsif @rating.safety_rating == "2" %>
+   <p> <%= @rating.safety_rating %>: Unsafe. </p>
+
+  <% elsif @rating.safety_rating == "1" %>
+   <p> <%= @rating.safety_rating %>: Dangerous! </p>
+
+  <% else %>
+   <p class="rating"> Please Rate the Safety for this Journey</p>
+  <% end %>
+</p>
+
+<div class="function">
+  <button type="button" class="button">
+   <%= link_to "Back to Previous", visits_path %>
+  </button>
+</div>
+
+
+<h3>Anyother Opinions for this Journey?</h3>
+<p> <%= @rating.comment %> </p>
+
+<time> Posted <%= @rating.created_at %> </time>
+
+</article>
+
+<p>
+<button type="button">
+<%= link_to "Edit this Rating", edit_visit_rating_path(@visit, @rating) %>
+</button>
+</p>
+
+</div>

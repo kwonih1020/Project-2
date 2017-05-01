@@ -1,0 +1,58 @@
+<div class="main_body">
+
+<h1> Edit Your Rating for your Journey </h1>
+
+<%= form_for [@visit, @rating] do |f| %>
+
+<article>
+
+<p> <%= f.label :recommendations_rating, "Do you recommendate this Tourist Spot?" %> </p>
+
+<p>
+  <div class="star">
+  <img src="<%= image_url("rating_star.png") %>" id="star1">
+  <img src="<%= image_url("rating_star.png") %>" id="star2">
+  <img src="<%= image_url("rating_star.png") %>" id="star3">
+  <img src="<%= image_url("rating_star.png") %>" id="star4">
+  <img src="<%= image_url("rating_star.png") %>" id="star5">
+  <div class="bar"></div>
+  <%= f.hidden_field :recommendations_rating, id: "star-val" %>
+</div>
+</p>
+
+<p> <%= f.label :safety_rating, "How would you rate the safety of this city?" %> </p>
+
+<p>
+  <div class="star">
+  <img src="<%= image_url("rating_star.png") %>" id="star1">
+  <img src="<%= image_url("rating_star.png") %>" id="star2">
+  <img src="<%= image_url("rating_star.png") %>" id="star3">
+  <img src="<%= image_url("rating_star.png") %>" id="star4">
+  <img src="<%= image_url("rating_star.png") %>" id="star5">
+  <div class="bartwo"></div>
+  <%= f.hidden_field :safety_rating, id: "star-val" %>
+</div>
+</p>
+
+
+<p> <%= f.label :comment, "Comments about this Journey!" %> </p>
+<p> <%= f.text_area :comment %></p>
+
+</article>
+
+<p> <%= f.submit %> </p>
+
+<% end %>
+
+<div class="function">
+  <button type="button" class="button">
+   <%= link_to "Back to Previous", visits_path %>
+  </button>
+</div>
+
+
+<button type="button">
+  <%= link_to "Delete", visit_rating_path(@visit, @rating), method: :delete %>
+</button>
+
+</div>
