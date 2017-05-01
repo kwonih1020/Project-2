@@ -8,7 +8,7 @@
 
 <article>
 
-<h3>Recommendation Rating for this journey: </h3>
+<h3>Recommend Rating for this journey: </h3>
 
 <div class="star">
 <img src="<%= image_url("rating_star.png") %>">
@@ -41,7 +41,7 @@
   <% end %>
 </p>
 
-<h3>Safety Rating for this journey: </h3>
+<h3>Safety Rating for this Journey: </h3>
 
 <div class="star">
   <img src="<%= image_url("rating_star.png") %>">
@@ -78,21 +78,19 @@
 <h3>Anyother Opinions for this Journey?</h3>
 <p> <%= @rating.comment %> </p>
 
-<time> Posted at <%= @rating.created_at %> </time>
+<time> Posted at <%= @rating.created_at %> by <%= @rating.user.email %> </time>
 
 </article>
 
 <p>
 <button type="button">
-<%= link_to "Edit this Rating", edit_visit_rating_path(@visit, @rating) %>
+<%= link_to "Edit this Rating Review", edit_visit_rating_path(@visit, @rating) %>
 </button>
 </p>
 
-
-<div class="function">
-  <button type="button" class="button">
+  <button type="button">
    <%= link_to "Back to Previous", visits_path %>
   </button>
-</div>
+
 
 </div>

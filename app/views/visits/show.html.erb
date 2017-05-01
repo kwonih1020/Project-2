@@ -3,18 +3,22 @@
 <h1>Welcome to
   <br>
   <span class="visit_name">
-  <%= @visit.name %> = <%= @visit.country %>
+  <%= @visit.name %>, <%= @visit.country %>
   </span>
+  <br>
+    <span class = "visit_diary"> <%= @visit.diary %> </span>
+    <br>
 </h1>
-<time> Updated at <%= @visit.updated_at %> </time>
+<time> Updated at <%= @visit.updated_at %> by <%= @visit.user.email %></time>
 
 <p>
   <button type="button">
-      <%= link_to "Edit Tourist Spot", edit_visit_path(@visit) %>
+      <%= link_to "Edit Your Journey", edit_visit_path(@visit) %>
   </button>
 </p>
 
 <article>
+
 <h2>Rating A Tourist Spot!</h2>
 <% @ratings.each do |rating| %>
 
@@ -27,12 +31,12 @@
 </div>
 <% end %>
 </article>
+<br>
 
-<div class = "function">
-<button type="button" class="button">
+<button type="button">
  <%= link_to "Back to Previous", visits_path %>
 </button>
-</div>
+
 
 <p>
   <button type="button">

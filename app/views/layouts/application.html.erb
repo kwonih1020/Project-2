@@ -6,19 +6,23 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
 
   <body>
+    <div class = "logo">
+      <a href = "/"> <%= image_tag("ick_logo.png") %>
+    </div>
 
-<div class = "navi">
-    <% if !current_user %>
-    <%= link_to "Sign Up", new_user_registration_path %>
-    <%= link_to "Sign in", new_user_session_path %>
+    <div class = "navi">
+      <% if !current_user %>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
       <% else %>
-        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-          <%= current_user.email %>
-  <% end %>
-</div>
+        <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
+          <a><%= current_user.email %></a>
+      <% end %>
+    </div>
 
   <div class = "flash">
     <p class="notice"><%= notice %></p>

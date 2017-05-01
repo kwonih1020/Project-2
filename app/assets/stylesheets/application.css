@@ -15,31 +15,186 @@
  */
  .star {
    display: inline-block;
-   background: #fff;
    position: relative;
  }
+
  .star img {
      cursor: pointer;
      float: left;
      position: relative;
-     width: 30px;
+     width: 50px;
      z-index: 2;
  }
- .barone {
+
+ .barone, .bartwo {
    position: absolute;
    height: 100%;
    top: 0;
    left: 0;
-   background: yellow;
+   background: blue;
    width: 0%;
    z-index: 0;
- }
- .bartwo {
-   position: absolute;
-   height: 100%;
-   top: 0;
-   left: 0;
-   background: yellow;
-   width: 0%;
-   z-index: 0;
- }
+}
+
+.flash {
+  margin-left: auto;
+}
+.alert {
+  color: red;
+  font-size: 100%;
+}
+
+.notice {
+  color: yellow;
+}
+
+body {
+   background-image: url("background.jpg");
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-position: center;
+   overflow: hidden;
+}
+
+.logo {
+      width: 100%;
+      max-height: 300px;
+      max-width: 800px;
+      display: block;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+article {
+  margin-top: 150px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 70px;
+  overflow: hidden;
+  padding: 15px;
+  min-width: 15em;
+  position: relative;
+}
+
+.main_body {
+  background-color: rgba(3, 152, 247, 0);
+  height: 30em;
+  margin: 0em 0em;
+  text-align: center;
+  border: 10px solid rgb(255, 204, 204);
+  border-radius: 20%;
+}
+
+.home_body {
+  background-color: rgba(3, 152, 247, 0);
+  height: 30em;
+  margin: 0em 0em;
+  text-align: center;
+}
+
+.main_body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+
+li {
+  display: inline;
+  padding: 20px 60px;
+}
+
+.text_box {
+  height: 250px;
+  overflow: hidden;
+
+}
+
+.rating {
+  color: red;
+}
+
+textarea {
+  width: 500px;
+  height: 50px;
+  border: 3px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+  color: rgb(224, 224, 224);
+}
+
+h2, h3 {
+  font-family: 'Merriweather', serif;
+  letter-spacing: 10px;
+  font-size: 25px;
+  color: rgb(255, 204, 204);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  color: rgb(224, 224, 224);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+}
+
+a {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  text-decoration: none;
+  color: rgb(255, 204, 204);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+}
+
+time {
+  color: rgb(255, 255, 153);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+button, input {
+  height: 80px;
+  width: 280px;
+  border-radius: 30%;
+  background-color: rgba(3, 152, 247, 0);
+  text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(255, 255, 153);
+}
+
+.visit_name {
+  color: rgb(255, 255, 204);
+  font-size: 65px;
+}
+
+.visit_diary {
+  color: rgb(51, 255, 255);
+  font-size: 30%;
+}
+
+.button, {
+  margin-top: 100px;
+  height: 70px;
+  width: 250px;
+}
+
+.home_button {
+  margin-top: 100px;
+  height: 80px;
+  width: 350px;
+}
