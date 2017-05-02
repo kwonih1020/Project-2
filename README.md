@@ -10,6 +10,7 @@
      HTML and CSS are used to structuring and styling. Command line, Ruby Gem, Ruby on Rails for functionality. Used jQuery for rating star system.
 
 ##Installation Instructions:
+
      1. Create new repo on github.
      2. Set up a Rails applications. Make brand new rails through command line by typing "rails new Project-2 -d postresql".
      3. Create database.
