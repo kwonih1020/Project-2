@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// $('#background').css('background-image' :'url("public/background.jpg")')
