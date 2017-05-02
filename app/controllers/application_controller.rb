@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   private
   def couldnt_find_record
-    redirect_to root_url, notice: "That record doesn't exist!"
+    redirect_to root_url, notice: "That place doesn't exist!"
   end
 
   def no_method_error

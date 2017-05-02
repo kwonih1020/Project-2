@@ -3,7 +3,9 @@
 
 ##Approach Taken:
 
-     In order to complete this project with simple CRUD function, I went over all important part of rails. For example, models, migration, views, controllers, routes, resources, sessions, flash, validations and handling errors. Also, did lots of google search for Rating star system.
+     In order to complete this project with simple CRUD function, I went over all important part of rails.
+     For example, models, migration, views, controllers, routes, resources, sessions, flash, validations
+     and handling errors. Also, did lots of google search for Rating star system.
 
 ##Technologies Used:
 
