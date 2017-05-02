@@ -9,7 +9,8 @@
 
 ##Technologies Used:
 
-     HTML and CSS are used to structuring and styling. Command line, Ruby Gem, Ruby on Rails for functionality. Used jQuery for rating star system.
+     HTML and CSS are used to structuring and styling. Command line, Ruby Gem, Ruby on Rails for
+     functionality. Used jQuery for rating star system.
 
 ##Installation Instructions:
 
@@ -23,7 +24,8 @@
 
 ##Issues:
 
-     The biggest issue throughout this project was Rating system. We never learn Rating system on Ruby, so I google search for this for a long time.
+     The biggest issue throughout this project was Rating system. We never learn Rating system on Ruby,
+     so I google search for this for a long time.
 
 ##Deliverables:
 
@@ -33,7 +35,8 @@
 
      Silver: Rating Star System. Add comment section to visits and ratings.
 
-     Gold: Search bar for navigating to exact visits(city name) to view posts and ratings. Adding Favorite to each models.
+     Gold: Search bar for navigating to exact visits(city name) to view posts and ratings. Adding
+     favorite to each models.
 
 ##User Stories:
 
