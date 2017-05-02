@@ -20,7 +20,7 @@
           <li><%= link_to "Sign in", new_user_session_path %></li>
       <% else %>
         <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </li>
-          <a><%= current_user.email %></a>
+          <li>User: <%= current_user.email %></li>
       <% end %>
     </div>
 

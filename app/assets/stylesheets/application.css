@@ -36,16 +36,15 @@
    z-index: 0;
 }
 
-.flash {
-  margin-left: auto;
-}
 .alert {
   color: red;
   font-size: 100%;
+  text-align: center;
 }
 
 .notice {
   color: yellow;
+  text-align: center;
 }
 
 body {
@@ -83,6 +82,7 @@ article {
   text-align: center;
   border: 10px solid rgb(255, 204, 204);
   border-radius: 20%;
+  width: 100%;
 }
 
 .home_body {
@@ -98,16 +98,23 @@ article {
 }
 
 .navi {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 li {
-  display: inline;
-  padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(224, 224, 224);
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text_box {
@@ -129,12 +136,11 @@ textarea {
 }
 
 input {
-  width: 200px;
-  height: 20px;
+  width: 230px;
+  height: 25px;
   border: 3px solid rgb(224, 224, 224);
   text-align: center;
-  align-items: center;
-  margin-bottom: 10px;
+
 }
 
 h1 {
@@ -149,7 +155,20 @@ h2, h3 {
   font-size: 25px;
   color: rgb(255, 204, 204);
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
 
+h4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  color: rgb(224, 224, 224);
 }
 
 p {
@@ -163,8 +182,14 @@ a {
   font-family: 'Merriweather', serif;
   font-size: 25px;
   text-decoration: none;
-  color: rgb(255, 204, 204);
+  color: rgb(224, 224, 224);
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
+  padding: 2px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 time {
@@ -189,6 +214,7 @@ button, input[type=button] {
 
 input[type=submit] {
   margin-top: 10px;
+  margin-bottom: 10px;
   height: 70px;
   width: 250px;
   border-radius: 30%;
@@ -197,6 +223,12 @@ input[type=submit] {
   font-size: 25px;
   text-align: center;
   color: rgb(255, 255, 153);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 input[type=text_field] {
@@ -222,4 +254,16 @@ input[type=text_field] {
   margin-top: 100px;
   height: 80px;
   width: 350px;
+}
+
+form {
+  color: rgb(255, 255, 204);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=checkbox] {
+  display: flex;
+  flex-direction: column;
 }
