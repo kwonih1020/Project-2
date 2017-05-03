@@ -1,12 +1,12 @@
 <div class="main_body">
 
-<h1> Add New Rating </h1>
+<h1> Share New Rating Review</h1>
 
 <%= form_for [@visit, @rating] do |f| %>
 
 <article>
 
-<p> <%= f.label :recommendations_rating, "Do you recommend this Tourist Spot?" %> </p>
+<p> <%= f.label :recommendations_rating, "Do you recommend this Journey?" %> </p>
 
 <p>
   <div class="star">
@@ -20,7 +20,7 @@
 </div>
 </p>
 
-<p> <%= f.label :safety_rating, "How would you rate the safety of this city?" %> </p>
+<p> <%= f.label :safety_rating, "How would you rate the safety of this Travel?" %> </p>
 
 <p>
   <div class="star">
@@ -46,7 +46,7 @@
 
 
   <button type="button">
-   <%= link_to "Back", visits_path %>
+   <%= link_to "Back to Previous", visits_path %>
   </button>
 
 </div>

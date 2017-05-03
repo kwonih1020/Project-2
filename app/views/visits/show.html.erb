@@ -1,6 +1,6 @@
 <div class="main_body" style="background: url(<%= @visit.photo %>) no-repeat center; background-size: cover">
 
-<h1>Welcome to
+<h1>Welcome!!
   <br>
   <span class="visit_name">
   <%= @visit.name %>, <%= @visit.country %>
@@ -19,11 +19,11 @@
 
 <article>
 
-<h2>Rating A Tourist Spot!</h2>
+<h2>Rating Review</h2>
 <% @ratings.each do |rating| %>
 
 <div class="text_box">
-<p> View <%= link_to "Review Full Rating", visit_rating_path(@visit, rating) %> by
+<p> View <%= link_to "Full Rating", visit_rating_path(@visit, rating) %> created by
   <%= rating.user.email %>
 </p>
   <h4><%= rating.comment %></h4>
@@ -39,7 +39,7 @@
 
 <p>
   <button type="button">
-    <%= link_to "Add Your Rating Review!", new_visit_rating_path(@visit) %>
+    <%= link_to "Add Rating Review", new_visit_rating_path(@visit) %>
   </button>
 </p>
 

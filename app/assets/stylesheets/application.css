@@ -198,7 +198,7 @@ time {
   color: rgb(255, 255, 153);
   text-shadow: -1px 0 rgba(0, 0, 0, 1), 0 1px rgba(0, 0, 0, 1), 1px 0 rgba(0, 0, 0, 1), 0 -1px rgba(0, 0, 0, 1);
   font-family: 'Merriweather', serif;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 button, input[type=button] {
